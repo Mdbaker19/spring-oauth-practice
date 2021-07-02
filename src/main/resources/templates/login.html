@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login page</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/login}">
+	<label>
+		User name
+		<input type="text" id="username" name="username">
+	</label>
+	<label>
+		Password
+		<input type="password" id="password" name="password">
+	</label>
+	<button>Submit</button>
+</form>
+<h2>Or</h2>
+<h2>With GitHub: <a href="/oauth2/authorization/github">click here</a></h2>
+</body>
+</html>
